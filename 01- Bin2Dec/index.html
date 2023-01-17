@@ -10,6 +10,9 @@
 </head>
 
 <body>
+
+    <p id="error0" class="error0"></p>
+
     <header>
         <h1>Binario</h1>
     </header>
@@ -19,7 +22,7 @@
             Informe um valor binario:
 
             <form>
-                <input type="number" id="entrada" name="entrada">
+                <input type="number" id="entrada" maxlength="9" name="entrada">
                 <button type="submit" >Enviar</button>
             </form>
 
@@ -28,7 +31,10 @@
         <div class="retorno">
 
             <p>Valor convertido:</p>
-            <h2 class="resposta" id="resposta"></h2>
+            <div class="resposta" maxlength="9" id="resposta">
+
+            </div>
+             
 
         </div>
 

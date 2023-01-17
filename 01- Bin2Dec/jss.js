@@ -7,17 +7,31 @@ const form = document.querySelector("form");
 
 form.addEventListener("click", (e) => {
   e.preventDefault();
-  // Recupera o valor do input
+
+
+
+  // Pegando o valor do input para o JS
   const value = entrada.value;
-
-  function converteBinario(binary){
-    return parseInt(binary,2)
-  }
-
-
   
-(converteBinario(value));
+  //Mensagem de erro
+  const error0 = document.getElementById(`error0`);
 
-//let resposta = document.getElementById(`resposta`);
+
+    if (!/^[01]*$/.test(value)) {
+
+      return error0.innerHTML = "Entrada inválida, a entrada deve conter apenas 0 e 1"
+
+    }else{
+
+      function converteBinario(binary){
+    return parseInt(binary,2) }
+
+  const resposta = document.getElementById(`resposta`);
+
+  resposta.innerHTML = converteBinario(value);
+
+  return error0.innerHTML = "";
+
+  }
 
 })

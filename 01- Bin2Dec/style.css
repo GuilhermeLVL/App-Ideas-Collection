@@ -1,23 +1,66 @@
 body{
+    font-family:'Courier New', Courier, monospace;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
 
-    background-color: burlywood;
+    background-color: rgb(36, 35, 34);
+    color: aliceblue;
 }
+
+h1{ 
+    font-size: 40px;
+    color: aqua;
+}
+h1:hover{
+    text-shadow: 1px 1px 15px rgba(0, 255, 255, 0.608) ;
+}
+
+#entrada{
+border-radius: 4px; 
+border: none;
+outline: none;
+}
+
+#entrada:hover{
+ box-shadow: 0px 0px 5px aqua;
+}
+
+.resposta{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    margin-top:20px;
+    margin-left: 10px;
+
+    width: auto;
+    height: 20px;
+    border-radius: 5px;
+    
+    color: black;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 2px black;
+    
+}
+
+button{
+border-radius: 5px;
+font-size: 15px;
+cursor: pointer;
+}
+
+button:hover{
+    box-shadow: 1px 1px 15px rgba(0, 255, 255, 0.608) ;
+}
+
 .retorno{
     display: flex;
-    
+    font-size: 20px;
 }
-.resposta{
-    width: 120px;
-    height: 20px;
-    border-radius: 30px;
-    margin-left: 30px;
-    
-    background-color: aliceblue;
-    box-shadow: 0px 0px 10px black;
-    text-align: center;
+
+#error0{
+    color: crimson;
 }
