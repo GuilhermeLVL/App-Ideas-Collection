@@ -17,9 +17,9 @@
 
 
 <div class="entradas">
-    <form action="">
-        <input class="esquerda-S" type="number" onkeypress="test()"> 
-        <input class="direita-S" type="number">
+    <form>
+        <input type="number" id="esquerda-S" maxlength="3" onkeypress="valor()"> 
+        <input type="number" id="direita-S" onkeypress="valor()">
     </form>
 </div>
 
@@ -37,13 +37,17 @@
 
 <div class="entradas">
     <form >
-        <input class="esquerda-I" type="number">
-        <input class="direita-I" type="number" >
+        <input  type="number" id="esquerda-I" onkeypress="valor()">
+        <input type="number" id="direita-I"  onkeypress="valor()">  
     </form>
 </div>
 
 
+<input class="btnAtualizar" value="Atualizar" type="submit" onclick="valor()">
 
+<div class="valores">
+<p id="valoresPx"></p>
+</div>
     <footer>
         @GuilhermeLVL
     </footer>

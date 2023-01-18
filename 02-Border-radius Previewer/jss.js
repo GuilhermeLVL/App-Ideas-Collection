@@ -1,19 +1,33 @@
 
+function valor(){
+//Superior
+let esquerdaS = document.getElementById('esquerda-S').value;
+let direitaS = document.getElementById('direita-S').value;
+//Inferior
+let esquerdaI = document.getElementById('esquerda-I').value;
+let direitaI = document.getElementById('direita-I').value;
+
+//Coletando o valor
 
 
-const esquerdaS = document.querySelector('.esquerda-S');
 
-const borda = document.querySelector('.borda');
+console.log(esquerdaS)
+console.log(direitaS)
+console.log(esquerdaI)
+console.log(direitaI)
+
+
+//Borda
+let borda = document.querySelector(".borda");
+borda.style.borderRadius = `${esquerdaS}px ${direitaS}px ${esquerdaI}px ${direitaI}px`;
 
 
 
-const pontaEsquerda = esquerdaS.value;
+const valoresPX = document.getElementById(`valoresPx`);
 
-p
+valoresPX.innerHTML = borda.style.borderRadius;
 
-function test(){
-
-return document.borda.style.borderradius = ;
+console.log(borda.style.borderRadius)
 
 
 }
