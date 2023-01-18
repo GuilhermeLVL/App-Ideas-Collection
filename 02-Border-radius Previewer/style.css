@@ -1,0 +1,48 @@
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+    background-color: rgb(48, 48, 48);
+}
+input{
+    border-radius: 5px;
+    height: 20px;
+    width: 150px;
+}
+form{
+
+     display: flex;
+    justify-content: space-between;
+}
+.entradas{
+width: 500px;
+margin: 0 auto;
+border: none;
+}
+.container-P{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    border-radius: 5px;
+
+    height: 350px;
+    width: 500px;
+    margin: 0 auto;
+
+    
+}
+
+.borda{
+background-color: aliceblue;
+
+border-radius: 10px 1px 50px 60px;
+
+width: 220px;
+height: 220px;
+
+}
