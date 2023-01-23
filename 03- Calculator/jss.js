@@ -1,42 +1,131 @@
 
-const numeros1 = document.getElementById(`numeros1`).innerHTML;
-const numeros2 = document.getElementById(`numeros2`).innerHTML;
-const numeros3 = document.getElementById(`numeros3`).innerHTML;
-const numeros4 = document.getElementById(`numeros4`).innerHTML;
-const numeros5 = document.getElementById(`numeros5`).innerHTML;
-const numeros6 = document.getElementById(`numeros6`).innerHTML;
-const numeros7 = document.getElementById(`numeros7`).innerHTML;
-const numeros8 = document.getElementById(`numeros8`).innerHTML;
-const numeros9 = document.getElementById(`numeros9`).innerHTML;
-
-parseInt(numeros1)
-console.log(numeros1)
+/*Saida de dados */
+let entrada1 = document.getElementById('entrada1');
 
 
 
+/*Armazena os dados */
+let array1 = [];
 
 
-function clicou(){
-console.log(numeros1)
-console.log(numeros2)
-console.log(numeros3)
-console.log(numeros4)
-console.log(numeros5)
-console.log(numeros6)
-console.log(numeros7)
-console.log(numeros8)
-console.log(numeros9)
+
+/*Adiciona o numero ao array */
+
+function num1(){
+    array1.push(1)
+    atualiza()
+    console.log(array1)
+    return array1
+}
 
 
-return console.log(parseInt(numeros1))
+function num2(){
+    array1.push(2)
+    atualiza()
+    console.log(array1)
+    return array1
+}
 
 
+function num3(){
+    array1.push(3)
+    atualiza()
+    console.log(array1)
+    return array1
+}
+
+
+function num4(){
+    array1.push(4)
+    atualiza()
+    console.log(array1)
+    return array1
+}
+
+
+function num5(){
+    array1.push(5)
+    atualiza()
+    console.log(array1)
+    return array1
+}
+
+
+function num6(){
+    array1.push(6)
+    atualiza()
+    console.log(array1)
+    return array1
+}
+
+
+function num7(){
+    array1.push(7)
+    atualiza()
+    console.log(array1)
+    return array1
+}
+
+
+function num8(){
+    array1.push(8)
+    atualiza()
+    console.log(array1)
+    return array1
+}
+
+
+function num9(){
+    array1.push(9)
+    console.log(array1)
+    atualiza()
+    return array1
+}
+
+
+
+/*Remove um elemento (Feito) */
+function numRemove(){
+    array1.pop()
+    atualiza()
+    console.log(array1)
+
+    return array1
 }
 
 
 
 
+/*Pegar os valores do array e passar para uma unica vaiavel */
+function atualiza(){
+    let valorOp = array1.join('')
+    console.log(valorOp)
 
+
+
+let valor1 = valorOp
+
+
+
+let operador =
+
+
+if(operador !== null){
+
+    valor2 =0
+
+let valor2 = valorOp
+
+}
+
+ 
+
+ 
+
+/*Imprime valor do usario */
+entrada1.innerHTML =`${valor1} ${operador} ${valor2}`
+
+}
 
 
 
