@@ -84,6 +84,16 @@ function num9(){
 
 
 
+/*Variaveis */
+let valor1 
+
+let operador 
+
+let valor2 
+
+let resposta 
+
+
 /*Remove um elemento (Feito) */
 function numRemove(){
     array1.pop()
@@ -93,6 +103,45 @@ function numRemove(){
     return array1
 }
 
+/*Zera as entradas do usario */
+function operaZera(){
+    array1 = []
+entrada1.innerHTML = 
+atualiza()
+}
+
+function operaDivisao(){
+
+    resposta = valor1 / valor2
+atualiza()
+}
+function operaDiv(){
+atualiza()
+}
+function operaX(){
+atualiza()
+}
+function operaMenos(){
+atualiza()
+}
+function operaMais(){
+atualiza()
+}
+function operaDecimal(){
+atualiza()
+}
+
+
+
+function operaResultado(){
+    
+atualiza()
+}
+
+
+
+
+
 
 
 
@@ -101,26 +150,9 @@ function atualiza(){
     let valorOp = array1.join('')
     console.log(valorOp)
 
+   
+    valor1 = valorOp
 
-
-let valor1 = valorOp
-
-
-
-let operador =
-
-
-if(operador !== null){
-
-    valor2 =0
-
-let valor2 = valorOp
-
-}
-
- 
-
- 
 
 /*Imprime valor do usario */
 entrada1.innerHTML =`${valor1} ${operador} ${valor2}`
