@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(34, 34, 34);
+}
+
+header, a{
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ text-align: center;
+ text-decoration: none;
+ color: rgb(194, 191, 191);
+ animation:RGBcolor  5s infinite;
+ 
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+}
+
+li{
+    list-style: none;
+    position: relative;
+    background-color:rgb(26, 26, 26) ;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+
+
+
+.luz01{
+   
+animation: luzVermelha 2s infinite;
+animation-delay: 1s;
+}
+.luz02{
+    animation: luzAmarela 2s  infinite;
+    animation-delay: 1.5s;
+}
+.luz03{
+    animation: luzVerde 2s  infinite;
+    animation-delay: 1s;
+}
+.luz04{
+    animation: luzAzul 2s infinite;
+    animation-delay: 1.5s;
+}
+
+
+@keyframes RGBcolor {
+    0%{
+        color: yellow ;
+    
+    }
+    33%{
+        color: blue;
+       
+    }
+    66%{
+        color: green;
+        
+    }
+    100%{
+        color: red;
+        
+    }
+}
+
+/*Cores Natalinas*/
+
+@keyframes luzVermelha {
+    0%,100%{
+        background-color:red ;
+    box-shadow: 1px 1px 50px red
+    }
+    50%{
+    box-shadow: 0px 0px 0px;
+}
+}
+
+@keyframes luzAmarela {
+    0%,100%{
+        background-color: yellow;
+    box-shadow: 1px 1px 50px yellow
+    }
+    50%{
+    box-shadow: 0px 0px 0px;
+}
+}
+    
+@keyframes luzVerde {
+    0%,100%{
+        background-color: green;
+    box-shadow: 1px 1px 50px green
+    }
+    50%{
+    box-shadow: 0px 0px 0px;
+}
+}
+
+@keyframes luzAzul {
+    0%,100%{
+        background-color: blue;
+    box-shadow: 1px 1px 50px blue;
+    
+    }
+    50%{
+    box-shadow: 0px 0px 0px;
+}
+}
+
+
+
+/*
+01- 7 CIRCULOS COLORIDOS EM FILA
+02- Temporizaador para alterar as cores de cada circulo 
+03- Quando um circulo é iluminado o anterior reduz a intencidade
+
+
+
+funcoes 
+01- botao que para e retorna a animacao das luzes
+02- é possivel alterar o valor de tempo, possibilitando acelerar ou diminuir o fluxo das luzes
+
+funcoes bonus
+01- pode escolher a cor para caada circulo
+02 - alternar o tamamnho de cada circulo
+*/
