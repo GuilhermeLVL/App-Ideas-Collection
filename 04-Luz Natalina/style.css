@@ -38,20 +38,16 @@ li{
 
 .luz01{
    
-animation: luzVermelha 2s infinite;
-animation-delay: 1s;
+animation: luzVermelha 2s infinite 1s;
 }
 .luz02{
-    animation: luzAmarela 2s  infinite;
-    animation-delay: 1.5s;
+    animation: luzAmarela 2s  infinite 1.5s;
 }
 .luz03{
-    animation: luzVerde 2s  infinite;
-    animation-delay: 1s;
+    animation: luzVerde 2s  infinite 1s;
 }
 .luz04{
-    animation: luzAzul 2s infinite;
-    animation-delay: 1.5s;
+    animation: luzAzul 2s infinite 1.5s;
 }
 
 
