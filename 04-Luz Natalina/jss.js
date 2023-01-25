@@ -1,8 +1,6 @@
-const luz1 = document.getElementById(`luz01`)
+let luz01 = document.querySelectorAll(`.luz01`);
 
-function onLuz(){
+function luzOff(){
+luz01.style.animation = "none";
 
-}
-function offLuz(){
-luz1..parentNode.removeChild();
 }
