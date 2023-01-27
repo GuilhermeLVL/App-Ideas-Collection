@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(58, 58, 58);
+}
+
+
+.container{
+    width: 20%;
+    background-color: rgb(93, 56, 102);
+    border-radius: 30px;
+    border: 2px solid white;
+    box-shadow: 1px 1px 10px rgb(255, 210, 154);
+    color: azure;
+}
+ul{
+    list-style: none;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nomes{
+margin: 30px;
+}
+
+.container2{
+    background-color: rgb(35, 35, 36);
+    color: aliceblue;
+    width: 40%;
+    border-radius: 30px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+01- Uma lista conteno os nomes ao clicar em um dos nomes uma aba com mais informacoes desse nome aparecera
+
+
+02- Ao clicar em um dos nomes da aba o usario tera a opcao de editar as informacoes
+*/
