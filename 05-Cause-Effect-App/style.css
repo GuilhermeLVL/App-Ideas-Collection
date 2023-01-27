@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(58, 58, 58);
 }
 body{
     display: flex;
@@ -41,16 +42,8 @@ color: white;
     text-align: center;
 }
 
-
-
-
-
-
-
-
-/*
-01- Uma lista conteno os nomes ao clicar em um dos nomes uma aba com mais informacoes desse nome aparecera
-
-
-02- Ao clicar em um dos nomes da aba o usario tera a opcao de editar as informacoes
-*/
+#espaco{
+    margin-top: 30vh;
+    width: 50%;
+    height: 50%;
+}
