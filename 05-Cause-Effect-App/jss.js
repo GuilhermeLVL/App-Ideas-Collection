@@ -5,17 +5,24 @@ function Pessoa(nome, idade, sexo) {
 }
 
 var nomes = document.querySelectorAll('.nomes');
-var container2 = document.querySelector('.container2')
+var container2 = document.querySelector('#container2');
+var fechar = document.querySelector('.fechar');
+var informacoes = document.querySelector('.inforacoes');
 
+
+//Faz com que todos os elementos da classe "nomes" tenham a funcao [ CLICK ]
 for(let i=0; i<=4; i++){
-nomes[i].addEventListener('click', function(){
+nomes[i].addEventListener("click", function(){
 
-container2.style.display='flex'
+  /* Funcao que adiciona e remove a classe: "container2" esse aconteciento leva 5segundos */
+  container2.classList.add("container2");
+
+  setTimeout(function() {
+    container2.classList.remove("container2");
+  }, 5000);
 
 })
-}
-
-
+};
 
 
 
