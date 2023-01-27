@@ -1,13 +1,10 @@
-function Pessoa(nome, idade, sexo) {
-  this.nome = nome;
-  this.idade= idade;
-  this.sexo= sexo;
-}
 
+//Pegando do HTML
 var nomes = document.querySelectorAll('.nomes');
 var container2 = document.querySelector('#container2');
 var fechar = document.querySelector('.fechar');
-var informacoes = document.querySelector('.inforacoes');
+
+//Declarando objetos
 
 
 //Faz com que todos os elementos da classe "nomes" tenham a funcao [ CLICK ]
@@ -21,15 +18,27 @@ nomes[i].addEventListener("click", function(){
     container2.classList.remove("container2");
   }, 5000);
 
+  if(nomes[i] == nomes[0]){
+  container2.innerHTML = 'Nome:Guilherme <br>Idade:20 <br>Sexo:Masculino';
+  }
+  else if(nomes[i] == nomes[1]){
+    container2.innerHTML = 'Nome:Amanda <br>Idade:20 <br>Sexo:Feminino';
+  }
+  else if(nomes[i] == nomes[2]){
+    container2.innerHTML = 'Nome:Melzinha <br>Idade:3.5 <br>Sexo:Feminino';
+  }
+  else if(nomes[i] == nomes[3]){
+    container2.innerHTML = 'Nome:Emanuel Gomes <br>Idade:53 <br>Sexo:Masculino';
+  }
 })
 };
 
 
 
 
-var maisInfo0 = new Pessoa('Guilherme','20','Masculino');
 
- nomes[0].innerHTML = 'ola'
+
+
 
 
 
