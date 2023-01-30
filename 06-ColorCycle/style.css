@@ -1,16 +1,23 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:  'Courier New', Courier, monospace;
 }
 body{
     display: flex;
     text-align: center;
     flex-direction: column;
-    margin-top: 25vh;
     justify-content: center;
     background-color: rgb(56, 56, 56);
    
+}
+
+h1{
+    position: relative;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    color: aqua;
 }
 .cores{
     width: 50%;
@@ -68,3 +75,7 @@ border-radius: 30px;
     cursor: pointer;
 }
 
+footer{
+    margin-top: 5vh;
+    color: aliceblue;
+  }
