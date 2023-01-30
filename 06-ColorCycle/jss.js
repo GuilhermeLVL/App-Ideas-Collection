@@ -7,10 +7,13 @@ let green =  document.getElementById(`green`);
 
 function retunColor(){
     
+
+
     if(red.value > 255 || blue.value > 255 ||green.value > 255){
         console.log(`error`)
-    }else{
-        console.log(`ola`)
+    }else if(red.value >= 0 || blue.value >= 0 ||green.value >= 0){
+        console.log(`ok`)
+        cores.style.backgroundColor = "rgb(" + red.value + "," + green.value + "," + blue.value + ")";
     }
 }
 
