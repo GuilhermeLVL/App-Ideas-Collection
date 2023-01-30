@@ -5,6 +5,14 @@ let red =  document.getElementById(`red`);
 let blue =  document.getElementById(`blue`);
 let green =  document.getElementById(`green`);
 
+function retunColor(){
+    
+    if(red.value > 255 || blue.value > 255 ||green.value > 255){
+        console.log(`error`)
+    }else{
+        console.log(`ola`)
+    }
+}
 
 
 
@@ -16,6 +24,6 @@ function numAleatorio(){
  green = Math.round(Math.random() * 255);
  blue = Math.round(Math.random() * 255);
 
- cores.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")"
- valor.innerHTML = `#${red},${green},${blue}` 
+ cores.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
+ valor.innerHTML = `#${red},${green},${blue}`;
 }
