@@ -13,10 +13,12 @@
 
 
         <div>
-            <input id="red" type="text"  max="255" onkeypress="retunColor()">
-            <input id="blue" type="text"  max="255" onkeypress="retunColor()">
-            <input id="green" type="text"  max="255" onkeypress="retunColor()">
+            <input id="red" type="text" onkeydown="retunColor()" max="255" >
+            <input id="green" type="text" onkeydown="retunColor()" max="255" >
+            <input id="blue" type="text" onkeydown="retunColor()" max="255" >
         </div>
+
+        <button class="botaoAtualizar" onclick="retunColor()">Atualizar</button>
 
         <div class="mudaCor">
             <div class="valor">Valor:#</div>

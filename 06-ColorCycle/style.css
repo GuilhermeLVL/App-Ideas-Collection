@@ -9,7 +9,8 @@ body{
     flex-direction: column;
     margin-top: 25vh;
     justify-content: center;
-background-color: rgb(59, 57, 57);
+    background-color: rgb(56, 56, 56);
+   
 }
 .cores{
     width: 50%;
@@ -39,4 +40,30 @@ border-radius: 30px;
     cursor: pointer;
 }
 
+input{
+    text-align: center;
+
+margin-top: 3vh;
+font-size: 20px;
+width: 20vh;
+height: 5vh;
+border-radius: 30px;
+}
+
+.botaoAtualizar{
+    width: 50%;
+    margin: 0 auto;
+
+    margin-top: 3vh;
+    font-size: 20px;
+    width: 20vh;
+    height: 5vh;
+    border-radius: 30px; 
+}
+.botaoAtualizar:hover{
+    background-color:  rgb(59, 57, 57);
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    cursor: pointer;
+}
 
