@@ -1,21 +1,65 @@
 *{
+    font-family:  'Courier New', Courier, monospace;
     padding: 0;
     margin: 0;
 }
 body{
-
-  display: flex;
+    display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
   flex-direction: column;
-
 
     background-color: rgb(41, 40, 40);
     color: aliceblue;
+}
 
+.date{
+    text-align: center;
+    height: 5vh;
+    width: 20vh;
+    border-radius: 30px;
+    background-color: rgb(166, 166, 166);
+    color: black;
+    font-size: 2vh;
+    border: none;
+}
+.date:hover{
+    box-shadow: 1px 1px 10px rgb(237, 243, 243);
+    background-color: azure;
+}
+
+
+.inputDate{
+
+    height: 100%;
+    margin-top: 30vh;
 }
 .datas{
-display: flex;
-justify-content: center;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    margin-top: 15vh;  
+    width:60vh;
 
+   
 } 
+.data{
+    text-align: center;
+
+   border-left: 0.5px solid rgb(135, 135, 135);
+   border-right: 0.5px solid rgb(135, 135, 135);
+    width: 30vh;
+}
+
+.data:hover{
+    border-left: 0.5px solid aqua;
+    border-right: 0.5px solid aqua;
+    transition: 1s;
+}
+.grande{
+font-size: 8vh;
+}
+.pequeno{
+    font-size: 2vh;
+}
