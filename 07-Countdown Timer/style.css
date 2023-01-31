@@ -55,6 +55,7 @@ body{
 .data:hover{
     border-left: 0.5px solid aqua;
     border-right: 0.5px solid aqua;
+    
     transition: 1s;
 }
 .grande{

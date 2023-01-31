@@ -9,9 +9,21 @@ let segundos = document.querySelector(`#segundos`)
 
 
 
-/*Dados atuais */
-let dateAt = new Date();
+function atualiza(){
+    /*Dados atuais */
+  let dateAt = new Date();  
+  
+dias.innerHTML = dateAt.getDate();
+horas.innerHTML = dateAt.getHours();
+minutos.innerHTML = dateAt.getMinutes();
+segundos.innerHTML = dateAt.getSeconds();
 
+//Chama a funcaaao infinitamente
+setInterval(atualiza, 1000);
+
+
+}
+atualiza()
 
 
 function coletaData(){
