@@ -8,8 +8,18 @@ let minutos = document.querySelector(`#minutos`)
 let segundos = document.querySelector(`#segundos`)
 
 
+function coletaData(){
+console.log( typeof( data.value))
+}
+
+
+
+
 
 function atualiza(){
+
+
+
     /*Dados atuais */
   let dateAt = new Date();  
   
@@ -21,16 +31,7 @@ segundos.innerHTML = dateAt.getSeconds();
 //Chama a funcaaao infinitamente
 setInterval(atualiza, 1000);
 
-
 }
-atualiza()
+atualiza();
 
 
-function coletaData(){
-
-    console.log(dateAt.getDate())
-    console.log(dateAt.getHours())
-    console.log(dateAt.getMinutes())
-    console.log(dateAt.getSeconds())
-
-}
