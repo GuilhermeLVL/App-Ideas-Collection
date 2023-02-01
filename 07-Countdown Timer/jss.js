@@ -12,17 +12,20 @@ let segundos = document.querySelector(`#segundos`)
 
 
 function coletaData(){
-
+/*Pega o valor do input */
   let dataValue = data.value;
+  /*converte de string para array separando por (" - ") */
+  let arrayData = dataValue.split("-");
 
-console.log(dataValue)
+  /*Cada parte do input [e alocada para uma variavel*/
+  let anoUsuario = arrayData[0];
+  let diaUsuario = arrayData[1];
+  let mesUsuario = arrayData[2];
+ 
 
- let arrayData = dataValue.split("-");
+ console.log(mesUsuario)
 
- let diaUsuario = arrayData[0]
- let mesUsuario = arrayData[0]
- let anoUsuario = arrayData[0]
-
+ 
 
 }
 
@@ -42,12 +45,14 @@ horas.innerHTML = dateAt.getHours();
 minutos.innerHTML = dateAt.getMinutes();
 segundos.innerHTML = dateAt.getSeconds();
 
+
 //Chama a funcaaao infinitamente
 setInterval(atualiza, 1000);
 
+
 }
 
-/*
+
 atualiza();
 
-*/
+
