@@ -8,8 +8,22 @@ let minutos = document.querySelector(`#minutos`)
 let segundos = document.querySelector(`#segundos`)
 
 
+
+
+
 function coletaData(){
-console.log( typeof( data.value))
+
+  let dataValue = data.value;
+
+console.log(dataValue)
+
+ let arrayData = dataValue.split("-");
+
+ let diaUsuario = arrayData[0]
+ let mesUsuario = arrayData[0]
+ let anoUsuario = arrayData[0]
+
+
 }
 
 
@@ -32,6 +46,8 @@ segundos.innerHTML = dateAt.getSeconds();
 setInterval(atualiza, 1000);
 
 }
+
+/*
 atualiza();
 
-
+*/
