@@ -23,12 +23,33 @@ function coletaData(){
   let mesUsuario = arrayData[2];
  
 
- console.log(mesUsuario)
+let dataFutura = new Date();
 
- 
+let diferencaDeAnos = anoUsuario - dataFutura.getFullYear();
+let mesesRestantes = mesUsuario - dataFutura.getMonth();
+let diasRestante = diaUsuario - dataFutura.getDay();
+
+let horasRestante = diasRestante * 24
+
+let minutosRestante = horasRestante * 60
+
+let segundosRestante = minutosRestante * 60
+
+
+
+
+console.log(`Anos:${diferencaDeAnos}`)
+console.log(`Meses:${mesesRestantes}`)
+console.log(`Dias:${diasRestante}`)
+
+console.log(`Horas:${horasRestante}`)
+console.log(`Minutos:${minutosRestante}`)
+console.log(`Segundos:${segundosRestante}`)
+
+
 
 }
-
+ 
 
 
 
@@ -52,7 +73,7 @@ setInterval(atualiza, 1000);
 
 }
 
-
+/*
 atualiza();
 
-
+*/
