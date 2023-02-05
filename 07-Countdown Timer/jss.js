@@ -27,22 +27,15 @@ let dataFutura = new Date();
 
 
 let diferencaDeAnos = anoUsuario - dataFutura.getFullYear();
+let mesesRestantes = mesUsuario  * 30;
 
 let dias = diferencaDeAnos * 365 - mesesRestantes;
 
-let horas =dias * 24;
+let horas = dias * 24 - diaUsuario;
 
 let minutos = horas * 60;
 
 let segundos = minutos * 60;
-
-
-/*VALORES QUE SERAO SUBTRAIDOS */
-
-/*Pega o valor do usario e converte para dias */
-let mesesRestantes = (mesUsuario - dataFutura.getMonth()) * 30;
-
-let diasRestante = diaUsuario - dataFutura.getDay();
 
 
 
@@ -51,11 +44,11 @@ let diasRestante = diaUsuario - dataFutura.getDay();
 
 console.log(`Anos:${diferencaDeAnos}`)
 console.log(`Meses:${mesesRestantes}`)
-console.log(`Dias:${diasRestante}`)
+console.log(`Dias:${dias}`)
 
-console.log(`Horas:${horasRestante}`)
-console.log(`Minutos:${minutosRestante}`)
-console.log(`Segundos:${segundosRestante}`)
+console.log(`Horas:${horas}`)
+console.log(`Minutos:${minutos}`)
+console.log(`Segundos:${segundos}`)
 
 
 
@@ -84,7 +77,7 @@ setInterval(atualiza, 1000);
 
 }
 
-/*
+
 atualiza();
 
-*/
+
