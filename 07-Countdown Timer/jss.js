@@ -25,15 +25,26 @@ function coletaData(){
 
 let dataFutura = new Date();
 
+
 let diferencaDeAnos = anoUsuario - dataFutura.getFullYear();
-let mesesRestantes = mesUsuario - dataFutura.getMonth();
+
+let dias = diferencaDeAnos * 365 - mesesRestantes;
+
+let horas =dias * 24;
+
+let minutos = horas * 60;
+
+let segundos = minutos * 60;
+
+
+/*VALORES QUE SERAO SUBTRAIDOS */
+
+/*Pega o valor do usario e converte para dias */
+let mesesRestantes = (mesUsuario - dataFutura.getMonth()) * 30;
+
 let diasRestante = diaUsuario - dataFutura.getDay();
 
-let horasRestante = diasRestante * 24
 
-let minutosRestante = horasRestante * 60
-
-let segundosRestante = minutosRestante * 60
 
 
 
