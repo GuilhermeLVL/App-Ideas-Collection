@@ -13,7 +13,7 @@ body{
 }
 .container{
     display: flex;
-    width: 90vw;
+    width: 45vw;
 }
 .panel{
     background-size: auto 100%;
@@ -43,12 +43,14 @@ body{
     opacity: 1;
 }
 
-@media(max-width:480px){
+
+
+@media(max-width: 480px) {
     .container{
         width: 100vw;
     }
     .panel:nth-of-type(4),
-    .panel:nth-of-type(5){
+    .panel:nth-of-type(5) {
         display: none;
     }
 }
