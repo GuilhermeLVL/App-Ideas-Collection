@@ -1,5 +1,5 @@
 :root{
-    --line-border-fill:#3498db;
+    --line-border-fill:#db3434;
     --line-border-empty:#e0e0e0;   
 
 }
@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: #f6f7fb;
+    background-color: #373738;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,8 +53,8 @@ body{
 }
 
 .circle{
-    background-color: #fff;
-    color: #999;
+    background-color: #373738;
+    color: #bebdbd;
     border-radius: 50%;
     height: 30px;
     width: 30px;
