@@ -1,7 +1,6 @@
 :root{
     --line-border-fill:#db3434;
     --line-border-empty:#e0e0e0;   
-
 }
 
 *{
@@ -16,7 +15,6 @@ body{
     height: 100vh;
     overflow: hidden;
     margin: 0;
-
 }
 .container{
     text-align: center;
