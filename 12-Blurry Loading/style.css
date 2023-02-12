@@ -15,11 +15,14 @@ body{
 .bg{
     background: url("https://cdn.pixabay.com/photo/2023/02/02/10/02/sunset-7762468_960_720.jpg") no-repeat center center/cover;
     position: absolute; 
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+    top: -30;
+    left: -30;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
     z-index: -1;
     filter: blur(0px);
 }
-,lo
+.loading-text{
+ font-size: 50px;
+ color: #fff;
+}
