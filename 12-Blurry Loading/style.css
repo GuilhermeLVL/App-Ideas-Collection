@@ -5,7 +5,6 @@
 body{
     background-color: #f6f7fb;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -13,3 +12,14 @@ body{
     margin: 0;
 
 }
+.bg{
+    background: url("https://cdn.pixabay.com/photo/2023/02/02/10/02/sunset-7762468_960_720.jpg") no-repeat center center/cover;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    filter: blur(0px);
+}
+,lo
