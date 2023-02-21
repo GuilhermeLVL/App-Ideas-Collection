@@ -80,7 +80,7 @@ h1 {
 }
 .split.left {
   left: 0;
-  background: url(iamgens/fortnite.jpg);
+  background: url(https://cdn1.epicgames.com/offer/fn/23BR_C4S1_EGS_Launcher_Blade_2560x1440_2560x1440-70d48b6b897fd8509891ebeb1c160117);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -94,7 +94,7 @@ h1 {
 
 .split.right {
   right: 0;
-  background: url(iamgens/over.jpg);
+  background: url(https://pbs.twimg.com/media/FNgObV9X0Aw4dwy?format=jpg&name=large);
   background-repeat: no-repeat;
   background-size: cover;
 }
