@@ -82,3 +82,8 @@ margin-bottom: 30px;
     top: 15px;
     left: 0;
 }
+.form-control label input span{
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+}
