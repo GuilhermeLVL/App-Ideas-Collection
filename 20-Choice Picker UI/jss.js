@@ -1,5 +1,13 @@
-const tagsEL = document.getElementById('tags');
-const textarea = document.getElementById('textarea');
+const tagsEL = document.getElementById('tags')
+const textarea = document.getElementById('textarea')
 
-textarea.focus();
+textarea.focus()
 
+textarea.addEventListener('keyup', (e) => {
+    createTags(e.target.value)
+})
+
+function createTags(input){
+    const tagas = input.split(',').filter(tag => tag.trim()
+    !== ''.map(tag => tag.trim()))
+}
