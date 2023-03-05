@@ -37,6 +37,13 @@ function randomSelect(){
         unHighlightTag(randomTag)
     },100)
     }, 100)
+    setTimeout(()=>{
+        clearInterval(interval)
+        setTimeout(() => {
+            const randomTag = pickRandomTag
+            highlightTag(randomTag)
+        },100)
+    },times * 100)
 }
 function pickRandomTag(){
     const tags = document.querySelectorAll('.tag')
