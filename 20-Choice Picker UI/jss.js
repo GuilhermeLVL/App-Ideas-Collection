@@ -26,3 +26,11 @@ function createTags(input){
         tagsEL.appendChild(tagEL)
     })
 }
+
+function randomSelect(){
+    const times = 30
+
+    const interval = setInterval(() => {
+        const
+    })
+}
