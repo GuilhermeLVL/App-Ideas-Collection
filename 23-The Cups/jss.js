@@ -3,6 +3,8 @@ const listers = document.getElementById('liters');
 const percentage = document.getElementById('percentage');
 const remained = document.getElementById('remained');
 
+updateBugCup()
+
 smallCups.forEach((cup, idx) => {
     cup.addEventListener('click', () => highlightCups(idx))
 })
@@ -19,4 +21,26 @@ cup.classList.add('full')
             cup.classList.remove('full')
         }
     })
+
+    updateBugCup()
+}
+function updateBugCup (){
+    const fullCups = document.querySelectorAll('.cup-small.full').length
+
+    const totalCups = smallCups.length
+
+    if(fullCups === 0 ){
+        percentage.style.visibility = 'hidden'
+        percentage.style.height = 0
+    } else{
+        percentage.style.visibility = 'visible'
+        percentage.style.height = `${fullCups / totalCups * 330}px`
+        percentage.innerText = `${fullCups / totalCups * 100}%`
+    }
+    if(fullCups === totalCups){
+        remained.style.visibility = 'hidden'
+        remained.style.height = 0
+    } else{
+        remained.style.visibility = 'visible'
+    }
 }
