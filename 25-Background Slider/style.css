@@ -10,7 +10,7 @@ body{
     height: 100vh;
     overflow: hidden;
     margin: 0;
-    background-image: url('https://cdn.pixabay.com/photo/2023/02/24/20/16/cinereous-vulture-7811766_960_720.jpg');
+    
     background-position: center center ;
     background-size: cover;
     transition: 0.4s;
