@@ -3,7 +3,6 @@
 }
 
 body{
-    background-color: #f6f7fb;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,18 +33,19 @@ body::before{
     width: 70vw;
     position: relative;
     overflow: hidden;
-
 }
 
 .slide{
+    border: blanchedalmond solid;
     opacity: 0;
-    height: 100vh;
+    height:100vh;
     width: 100vw;
     background-position: center center;
     background-size: cover;
     position: absolute;
-    top: -15vh;
-    left: -15vw;
+    top: -10vh;
+    left: -10vw;
+   
     transition: 0.4s ease;
     z-index: 1;
 
