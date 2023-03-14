@@ -24,7 +24,7 @@ color: var(--primary-color);
 }
 
 body{
-    background-color: #f6f7fb;
+   
     display: flex;
     align-items: center;
     justify-content: center;
