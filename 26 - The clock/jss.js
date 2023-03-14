@@ -12,6 +12,7 @@ const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul",
 "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 
+//Dark mode
 toggle.addEventListener('click',(e) =>{
     const html = document.querySelector('html')
 
@@ -23,3 +24,17 @@ toggle.addEventListener('click',(e) =>{
         e.target.innerHTML = 'Light mode'     
     }
 }) 
+
+
+function setTime(){
+    const time = new Date();
+   const month = time.getMonth();
+   const day = time.getDay();
+   const hours = time.getHours();
+   const hoursForClock = hours % 12;
+   const minutes = time.getMinutes();
+   const second = time.getSeconds();
+
+   hou
+}
+setTime()
