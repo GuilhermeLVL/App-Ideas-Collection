@@ -9,7 +9,7 @@ const clearEl = document.getElementById("clear");
 
 const ctx = canvas.getContext("2d");
 
-let size = 20;
+let size = 10;
 let isPressed = false
 let color = 'black';
 let x
@@ -62,5 +62,32 @@ function drawLine(x1, y1, x2, y2) {
     ctx.lineWidth = size * 2
     ctx.stroke()
 }
+
+
+
+
+function updateSizeOnScreen(){
+    sizeEL.innerText = size
+}
+
+increaseBtn.addEventListener('click', () => {
+    size += 5
+
+    if(size > 50){
+        size = 50
+    }
+
+    updateSizeOnScreen()
+})
+
+decreaseBtn.addEventListener('click', () => {
+    size -= 5
+
+    if(size < 10){
+        size = 10
+    }
+
+    updateSizeOnScreen()
+})
 
 colorEl.addEventListener('change', (e) => color = e.target.value)
