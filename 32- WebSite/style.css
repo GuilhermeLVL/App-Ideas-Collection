@@ -13,6 +13,15 @@ body{
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.nav{
+    position: fixed;
+    background-color: #222;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .3s ease-in-out;
+}
 /* @todo Nav*/
 .hero{
     background-image: url('https://images.pexels.com/photos/162137/duckling-birds-yellow-fluffy-162137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
