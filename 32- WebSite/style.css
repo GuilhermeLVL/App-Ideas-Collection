@@ -10,5 +10,14 @@ body{
     padding-bottom:50px ;
 }
 .container{
-    
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* @todo Nav*/
+.hero{
+    background-image: url('https://images.pexels.com/photos/162137/duckling-birds-yellow-fluffy-162137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:bottom center ;
 }
