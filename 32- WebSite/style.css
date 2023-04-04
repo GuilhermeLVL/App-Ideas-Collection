@@ -22,6 +22,28 @@ body{
     right: 0;
     transition: all .3s ease-in-out;
 }
+.nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    transition: all .3s ease-in-out;
+}
+
+.nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
 /* @todo Nav*/
 .hero{
     background-image: url('https://images.pexels.com/photos/162137/duckling-birds-yellow-fluffy-162137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
