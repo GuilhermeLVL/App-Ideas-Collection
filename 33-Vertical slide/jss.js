@@ -17,8 +17,10 @@ const changeSlide = (direction) => {
     const sliderHeight = slideContainer.clientHeight
     if (direction === 'up'){
         activeSlideIndex++
-        if(activeSlideIndex > slideLength - 1){
+        if(activeSlideIndex > slidesLength - 1){
             activeSlideIndex = 0
         }
     }
+
+    slideRight.style.transform = `translateY(-${activeSlideIndex * sliderHeight}px)`
 }
