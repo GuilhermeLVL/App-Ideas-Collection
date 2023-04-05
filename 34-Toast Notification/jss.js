@@ -7,14 +7,18 @@ const messages = [
 'Ola 3',
 'Ola 4',
 ]
-button.addEventListener('click', () => createNotification())
 
-function createNotification(){
+const types = ['info', 'success', 'error']
+button.addEventListener('click', () => createNotification('This is invalid data','success'))
+
+function createNotification(message = null, type = null){
 
 const notif = document.createElement('div')
 notif.classList.add('toast')
+notif.classList.add(type ? type : 'info')
 
-notif.innerText = getRandomMessage()
+
+notif.innerText = message ?  message : getRandomMessage()
 
 toasts.appendChild(notif)
 
