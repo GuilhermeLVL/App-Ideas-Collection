@@ -9,13 +9,13 @@ const messages = [
 ]
 
 const types = ['info', 'success', 'error']
-button.addEventListener('click', () => createNotification('This is invalid data','success'))
+button.addEventListener('click', () => createNotification())
 
 function createNotification(message = null, type = null){
 
 const notif = document.createElement('div')
 notif.classList.add('toast')
-notif.classList.add(type ? type : 'info')
+notif.classList.add(type ? type : getRandomtype())
 
 
 notif.innerText = message ?  message : getRandomMessage()
@@ -30,4 +30,7 @@ setTimeout(() =>{
 
 function getRandomMessage(){
     return messages[Math.floor(Math.random() * messages.length)]    
+}
+function getRandomtype(){
+    return types[Math.floor(Math.random() * types.length)]    
 }
