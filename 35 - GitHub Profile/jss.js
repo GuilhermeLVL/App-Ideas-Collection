@@ -18,6 +18,17 @@ const { data } = await axios(APIURL + username)
 
 }
 
+async function getRepos(username){
+    try{
+        const { data } = await axios(APIURL + username + '/repos')
+           
+            createUserCard(data)
+            }catch(err){
+                console.log(err)
+        
+            }
+}
+
 function createUserCard(user){
 
     const cardHTML = ` 
