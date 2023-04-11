@@ -52,5 +52,9 @@ small{
 }
 
 @keyframes grpw{
-    
+    to{
+        transform: translate(-50%,-50%) scale(10);
+        opacity: 0;
+
+    }
 }
