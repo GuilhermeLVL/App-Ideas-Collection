@@ -45,4 +45,15 @@ body
 
                 a
                     &:hover
-                        color: variables.$secondary-color     
+                        color: variables.$secondary-color 
+
+    &-social-media
+        ul
+            @include mixins.flex-center
+            height: 100%
+            
+            li
+                margin: 0 1rem
+                a
+                    &:hover
+                        color: variables.$primary-color
