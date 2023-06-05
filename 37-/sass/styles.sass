@@ -1,5 +1,5 @@
 @use 'variables'
-
+@use 'mixins'
     
 *
     font-family: 'Josefin Sans'
@@ -16,4 +16,10 @@ body
         text-decoration: none
         transition: .4s
 
-    
+    ul
+        list-style: none
+
+.header
+    display: flex
+    justify-content: space-between
+    @include mixins.container
