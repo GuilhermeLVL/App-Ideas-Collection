@@ -29,5 +29,11 @@ body ul {
   color: #fff;
   font-size: 3rem;
 }
+.header-navbar ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /*# sourceMappingURL=styles.css.map */

@@ -25,5 +25,12 @@ body
     @include mixins.container
 
     &-brand
+
         color: variables.$primary-color
         font-size: 3rem
+    
+    &-navbar
+
+        ul
+            height: 100%
+            @include mixins.flex-center
