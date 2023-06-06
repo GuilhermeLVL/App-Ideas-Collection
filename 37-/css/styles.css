@@ -78,6 +78,7 @@ body ul {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  color: #fff;
 }
 .gallery-title {
   font-size: 2rem;
