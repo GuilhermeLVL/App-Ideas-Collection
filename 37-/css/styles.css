@@ -1,84 +1,18 @@
-* {
-  font-family: "Josefin Sans";
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+/* Error: Expected identifier.
+ *    ,
+ * 13 |     @
+ *    |      ^
+ *    '
+ *   sass\_mixins.sass 13:6  @use
+ *   sass\styles.sass 2:1    root stylesheet */
 
-body {
-  background-color: #000;
-  color: #777;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected identifier.\a    \2577 \a 13 \2502      @\a    \2502       ^\a    \2575 \a   sass\\_mixins.sass 13:6  @use\a   sass\\styles.sass 2:1    root stylesheet";
 }
-body a {
-  color: #777;
-  text-decoration: none;
-  transition: 0.4s;
-}
-body ul {
-  list-style: none;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1170px;
-  padding: 1.5rem;
-  margin: 0 auto;
-}
-.header-brand {
-  color: #fff;
-  font-size: 3rem;
-}
-.header-navbar ul {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.header-navbar ul li {
-  margin: auto;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-}
-.header-navbar ul li .active {
-  color: #20c997;
-}
-.header-navbar ul li a:hover {
-  color: #20c997;
-}
-.header-social-media ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-.header-social-media ul li {
-  margin: 0 1rem;
-}
-.header-social-media ul li a:hover {
-  color: #fff;
-}
-
-.gallery {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 1170px;
-  padding: 1.5rem;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0;
-}
-.gallery-card {
-  width: 31%;
-  height: 400px;
-  margin-bottom: 4%;
-}
-.gallery-title {
-  font-size: 2rem;
-  font-weight: 300;
-  margin-bottom: 1rem;
-}
-
-/*# sourceMappingURL=styles.css.map */
