@@ -79,13 +79,22 @@ body ul {
   justify-content: center;
   flex-direction: column;
   color: #fff;
+  background-color: #fff;
+  color: #000;
 }
-.gallery-title {
+.gallery-card-title {
   font-size: 2rem;
   font-weight: 300;
   margin-bottom: 1rem;
 }
-
+.gallery-card-btn {
+  padding: 0.6rem 2rem;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 #card-1 {
   background-image: url("../img/img");
   background-size: 100%;
@@ -210,19 +219,6 @@ body ul {
   background-size: 110%;
   filter: grayscale(0%);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/img");
-}
-
-.gallery-card-btn {
-  padding: 0.6rem 2rem;
-  border: 2px solid #fff;
-  color: #fff;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.gallery-card-btn:hover {
-  background-color: #fff;
-  color: #000;
 }
 
 /*# sourceMappingURL=styles.css.map */
