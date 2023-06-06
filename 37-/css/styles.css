@@ -105,6 +105,7 @@ body ul {
 @media (max-width: 425px) {
   .gallery-card {
     width: 90%;
+    margin-bottom: 6%;
   }
 }
 .gallery-card-title {
